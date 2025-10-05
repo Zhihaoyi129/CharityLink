@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for charity events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="container">
+            <div class="nav-brand">Charity event platform</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="search.html">Search activity</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="search-page">
+        <div class="container">
+            <div class="search-header">
+                <h1>Discovering charitable activities</h1>
+                <p>By filtering, we can find the activities that interest you.</p>
+            </div>
+            
+            <section class="search-form-section">
+                <form id="search-form" class="search-form">
+                    <div class="form-group">
+                        <label for="date">date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">address:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter the location keyword">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">category:</label>
+                        <select id="category" name="category">
+                            <option value="">all categories</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">search</button>
+                        <button type="button" id="clear-btn" class="btn-secondary">delete</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="search-results-section">
+                <h2>search result</h2>
+                <div id="search-results" class="events-grid">
+                </div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Charity event platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
